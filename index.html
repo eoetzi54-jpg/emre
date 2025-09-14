@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ELITEZONE – Luxury. Power. Legacy.</title>
+  <meta name="description" content="Elitezone präsentiert kuratierte Luxuswelten – Uhren, Mode und Yachten in zeitlosem Stil." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0A0A0A;
+      --bg-2:#141414;
+      --text:#FFFFFF;
+      --muted:#BFBFBF;
+      --gold:#D4AF37;
+      --max:1200px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--max);margin:auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:100;background:rgba(10,10,10,.9);backdrop-filter:blur(6px);border-bottom:1px solid rgba(212,175,55,.2)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:80px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:50px}
+    .brand span{font-family:"Playfair Display",serif;font-size:22px;color:var(--gold);letter-spacing:.1em;font-weight:700}
+    nav ul{display:flex;gap:28px;list-style:none}
+    nav a{padding:6px 0;border-bottom:2px solid transparent}
+    nav a:hover{color:var(--gold)}
+    nav a.active{border-color:var(--gold);color:var(--gold)}
+    .hero{background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.6)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1800&auto=format&fit=crop') center/cover no-repeat}
+    .hero .inner{min-height:80vh;display:grid;place-items:center;text-align:center;padding:80px 20px}
+    h1{font-family:"Playfair Display",serif;font-size:54px;color:var(--gold);letter-spacing:.05em}
+    .subtitle{font-family:"Playfair Display",serif;letter-spacing:.3em;margin-top:10px;color:#e9e4d4}
+    .lead{max-width:720px;margin:20px auto 36px;color:var(--muted)}
+    .btn{display:inline-block;padding:12px 22px;border:1px solid var(--gold);border-radius:999px}
+    .btn.primary{background:var(--gold);color:#111;font-weight:600}
+    .btn + .btn{margin-left:12px}
+    section{padding:80px 0;border-top:1px solid rgba(255,255,255,.06)}
+    section.alt{background:var(--bg-2)}
+    h2{font-family:"Playfair Display",serif;font-size:36px;margin-bottom:14px}
+    p.section-intro{color:var(--muted);max-width:780px}
+    .grid{display:grid;gap:24px}
+    .g-3{grid-template-columns:repeat(3,1fr)}
+    .card{background:#0f0f0f;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+    .card .thumb{aspect-ratio:4/3;background:#111}
+    .card .body{padding:18px}
+    .card h3{font-family:"Playfair Display",serif;font-size:22px;margin-bottom:6px}
+    .card p{color:var(--muted)}
+    .card a{margin-top:12px;color:var(--gold);font-weight:600}
+    .nl{display:flex;gap:10px;margin-top:18px}
+    .nl input{flex:1;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:#0f0f0f;color:var(--text)}
+    .nl button{padding:12px 18px;border-radius:10px;border:1px solid var(--gold);background:var(--gold);color:#111;font-weight:700}
+    footer{padding:40px 0;color:#aaa;border-top:1px solid rgba(255,255,255,.08);text-align:center}
+    footer small{display:block;margin-top:8px}
+    @media(max-width:900px){
+      h1{font-size:40px}
+      .g-3{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="logo.png" alt="Elitezone Logo">
+      <span>ELITEZONE</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#start" class="active">Startseite</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#collections">Kollektionen</a></li>
+        <li><a href="#magazin">Magazin</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="start" class="hero">
+  <div class="inner container">
+    <div>
+      <h1>Elitezone</h1>
+      <div class="subtitle">LUXURY · POWER · LEGACY</div>
+      <p class="lead">Elitezone präsentiert kuratierte Luxuswelten – Uhren, Mode und Yachten in zeitlosem Stil. Minimaler Aufwand, maximale Wirkung.</p>
+      <a class="btn primary" href="#collections">Kollektionen entdecken</a>
+      <a class="btn" href="#about">Über uns</a>
+    </div>
+  </div>
+</main>
+
+<section id="about">
+  <div class="container">
+    <h2>Über uns</h2>
+    <p class="section-intro">Elitezone vereint zeitlose Eleganz mit moderner Einfachheit. Unser Ziel: wenige, aber bedeutungsvolle Stücke, die Kraft und Erbe verkörpern.</p>
+  </div>
+</section>
+
+<section id="collections" class="alt">
+  <div class="container">
+    <h2>Kollektionen</h2>
+    <p class="section-intro">Selektion mit Charakter – entdecke unsere kuratierten Kategorien.</p>
+    <div class="grid g-3" style="margin-top:24px">
+      <article class="card">
+        <div class="thumb"><!-- Bild später --></div>
+        <div class="body">
+          <h3>Uhren & Accessoires</h3>
+          <p>Mekanik als Poesie am Handgelenk.</p>
+          <a href="#">Mehr erfahren →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb"></div>
+        <div class="body">
+          <h3>Yachten & Meer</h3>
+          <p>Eleganz trifft auf die Freiheit des Ozeans.</p>
+          <a href="#">Mehr erfahren →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb"></div>
+        <div class="body">
+          <h3>Mode & Stil</h3>
+          <p>Minimalistische Outfits mit maximaler Wirkung.</p>
+          <a href="#">Mehr erfahren →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="magazin">
+  <div class="container">
+    <h2>Magazin</h2>
+    <p class="section-intro">Inspiration & Guides für die Welt des Luxus.</p>
+    <div class="grid g-3" style="margin-top:24px">
+      <article class="card">
+        <div class="body">
+          <h3>Was bedeutet „Minimaler Luxus“?</h3>
+          <p>Weniger ist mehr – Qualität über Quantität.</p>
+          <a href="#">Weiterlesen →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="body">
+          <h3>5 Tipps für die erste Yacht-Reise</h3>
+          <p>Route, Budget, Crew, Sicherheit & Bilder.</p>
+          <a href="#">Weiterlesen →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="body">
+          <h3>3 Details beim Uhrenkauf</h3>
+          <p>Mechanismus, Material, Service-Historie.</p>
+          <a href="#">Weiterlesen →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <h2>Newsletter</h2>
+    <p class="section-intro">Erhalte wöchentlich kuratierte Luxus-Empfehlungen.</p>
+    <div class="nl">
+      <input type="email" placeholder="Deine E-Mail-Adresse">
+      <button>Abonnieren</button>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Kontakt</h2>
+    <p class="section-intro">Fragen zu unseren Kollektionen? Schreib uns.</p>
+    <form style="margin-top:20px;display:grid;gap:12px;max-width:500px">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="E-Mail">
+      <textarea rows="5" placeholder="Nachricht"></textarea>
+      <button style="padding:12px 18px;border-radius:10px;border:1px solid var(--gold);background:var(--gold);color:#111;font-weight:700">Senden</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <img src="logo-footer.png" alt="Elitezone Logo Footer" style="height:40px;margin:auto">
+    <p>ELITEZONE – Luxury. Power. Legacy.</p>
+    <small>© 2025 Elitezone. Alle Rechte vorbehalten.</small>
+  </div>
+</footer>
+
+</body>
+</html>
